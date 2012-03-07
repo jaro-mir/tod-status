@@ -63,7 +63,6 @@ class WidgetModel
     */
     private function isPageContentValid()
     {
-var_dump($this->raw_data);exit;
         //dane ppobieramy z tablicy pod tym indeksem
         if(!isset($this->raw_data[2]))
         {
