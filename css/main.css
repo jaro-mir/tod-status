@@ -1,9 +1,9 @@
 body {font-size: 0.8em; color: white; font-weight: bold}
 
-#horde_nb {position: absolute; top: 55px; left: 45px; width: 45px; text-align: center}
-#ally_nb {position: absolute; top: 55px; left: 95px; width: 35px; text-align: center}
-#status {position: absolute; top: 40px; left: 45px; width: 85px; text-align: center}
-#uptime {position: absolute; top: 69px; left: 45px; width: 85px; text-align: center}
+#horde_nb {position: absolute; top: 54px; left: 45px; width: 45px; text-align: center}
+#ally_nb {position: absolute; top: 54px; left: 95px; width: 35px; text-align: center}
+#status {position: absolute; top: 39px; left: 45px; width: 85px; text-align: center}
+#uptime {position: absolute; top: 68px; left: 45px; width: 85px; text-align: center}
 
 .status_online {color: green}
 .status_offline {color: red}
