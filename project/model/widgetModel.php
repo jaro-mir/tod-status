@@ -43,7 +43,7 @@ class WidgetModel
             $this->data['horde_nb'] = '??';
             $this->data['ally_nb'] = '??';
             $this->data['uptime'] = '??';
-            $this->data['is_online'] = false;
+            $this->data['is_online'] = null;
 
             return $this->data;
         }
@@ -63,6 +63,7 @@ class WidgetModel
     */
     private function isPageContentValid()
     {
+var_dump($this->raw_data);exit;
         //dane ppobieramy z tablicy pod tym indeksem
         if(!isset($this->raw_data[2]))
         {
