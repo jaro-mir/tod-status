@@ -5,8 +5,8 @@
 </head>
 <body>
     <img src="images/background.jpg" />
-    <div id="horde_nb">275</div>
-    <div id="ally_nb">239</div>
+    <div id="horde_nb">294</div>
+    <div id="ally_nb">245</div>
     <div id="status">
         <span class="status_online">
         online
