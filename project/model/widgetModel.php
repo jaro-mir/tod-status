@@ -18,7 +18,7 @@ class WidgetModel
     {
         if(!$this->page_content)
         {
-            $this->page_content = file_get_contents('http://wotlk.theatreofdreams.pl');
+            $this->page_content = str_replace("\n", '', file_get_contents('http://wotlk.theatreofdreams.pl'));
         }
 
         return $this->page_content;
@@ -35,8 +35,7 @@ class WidgetModel
         {
             return $this->data;
         }
-
-        preg_match_all('/<em(.*)>(.*)<\/em>/', $this->getWebpageContent(), $this->raw_data);
+        preg_match_all("/<em(.*?)>(.*?)<\/em>/", $this->getWebpageContent(), $this->raw_data);
 
 	if($this->isPageContentValid() == false)
         {
@@ -73,6 +72,16 @@ class WidgetModel
         if(count($this->raw_data[2]) != 8)
         {
             return false;
+        }
+
+        if($this->raw_data[2][2] != 'vs')
+        {
+           return false;
+        }
+
+        if(in_array($this->raw_data[2][7], array('online', 'offline')) == false)
+        {
+           return false;
         }
         
         return true;
