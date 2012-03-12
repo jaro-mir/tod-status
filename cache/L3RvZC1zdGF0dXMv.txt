@@ -5,14 +5,14 @@
 </head>
 <body>
     <img src="images/background.jpg" />
-    <div id="horde_nb">149</div>
-    <div id="ally_nb">133</div>
+    <div id="horde_nb">350</div>
+    <div id="ally_nb">297</div>
     <div id="status">
         <span class="status_online">
         online
     </span>
         </div>
-    <div id="uptime">8 h 10 m </div>
+    <div id="uptime">12 h 30 m </div>
 
 </body>
 </html>
