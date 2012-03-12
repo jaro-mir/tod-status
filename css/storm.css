@@ -1,0 +1,11 @@
+#horde_nb {position: absolute; top: 158px; left: 57px; width: 60px; text-align: left; font-size: 1.4em}
+#ally_nb {position: absolute; top: 130px; left: 67px; width: 60px; text-align: right; font-size: 1.4em}
+#status {position: absolute; top: 49px; left: 88px; width: 56px; text-align: center; font-size: 1.4em}
+#uptime {position: absolute; top: 85px; left: 83px; width: 85px; text-align: center}
+
+.status_online {color: green}
+.status_offline {color: red}
+
+@font-face { font-family: Chiller; src: url('fonts/chiller.ttf'); }
+.storm {font-family: Chiller; font-size: 1.1em; color: white; font-weight: bold}
+
