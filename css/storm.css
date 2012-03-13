@@ -9,3 +9,5 @@
 @font-face { font-family: Chiller; src: url('fonts/chiller.ttf'); }
 .storm {font-family: Chiller; font-size: 1.1em; color: white; font-weight: bold}
 
+#indicator {position: absolute; left: 27px; top: 8px}
+

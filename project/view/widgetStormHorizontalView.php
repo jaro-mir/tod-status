@@ -1,13 +1,13 @@
 <!doctype html>
 <html>
 <head>
-<link type="text/css" rel="stylesheet" href="css/storm.css" />
+<link type="text/css" rel="stylesheet" href="css/storm_h.css" />
 <script type="text/javascript" src="js/storm.js"></script>
 </head>
 <body>
-    <div class="storm" onclick="refreshStatus('widget.php?layout=storm')">
+    <div class="storm" onclick="refreshStatus('widget.php?layout=storm_h')">
         <div id="indicator" style="display: none"><img src="images/indicator.gif" /></div>
-        <img src="images/storm2a.png" />
+        <img src="images/storm_h.png" />
         <div id="horde_nb"><?php echo $horde_nb ?></div>
         <div id="ally_nb"><?php echo $ally_nb ?></div>
         <div id="status">

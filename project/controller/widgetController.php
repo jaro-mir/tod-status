@@ -23,6 +23,9 @@ class WidgetController
             case 'storm':
                 include 'project/view/widgetStormView.php';
                 break;
+            case 'storm_h':
+                include 'project/view/widgetStormHorizontalView.php';
+                break;
             default:
                 include 'project/view/widgetView.php';
         }

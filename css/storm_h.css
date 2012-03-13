@@ -1,0 +1,13 @@
+#horde_nb {position: absolute; top: 138px; left: 30px; width: 60px; text-align: right; font-size: 14px}
+#ally_nb {position: absolute; top: 138px; left: 130px; width: 40px; text-align: left; font-size: 14px}
+#status {position: absolute; top: 69px; left: 120px; width: 56px; text-align: left; font-size: 12px}
+#uptime {position: absolute; top: 91px; left: 120px; width: 85px; text-align: left; font-size: 12px}
+
+.status_online {color: green}
+.status_offline {color: red}
+
+@font-face { font-family: Warcraft; src: url('fonts/warcraft.ttf'); }
+.storm {font-family: Warcraft; font-size: 1.1em; color: white; font-weight: bold}
+
+#indicator {position: absolute; left: 21px; top: 14px}
+
