@@ -43,7 +43,6 @@ class WidgetModel
             $this->data['ally_nb'] = '??';
             $this->data['uptime'] = '??';
             $this->data['is_online'] = null;
-            $this->data['rev'] = null;
 
             return $this->data;
         }
@@ -52,7 +51,6 @@ class WidgetModel
         $this->data['ally_nb'] = $this->raw_data[2][3];
         $this->data['uptime'] = $this->raw_data[2][5];
         $this->data['is_online'] = $this->raw_data[2][7]=='online'?true:false;
-        $this->data['rev'] = $this->raw_data[2][6];
 
         return $this->data;
     }
@@ -123,16 +121,6 @@ class WidgetModel
     public function getServerUptime()
     {
         return str_replace(array('Hour', 'Min'), array('h', 'm'), $this->data['uptime']);
-    }
-
-    /**
-    * Zwraca rev
-    * @return string
-    */
-    public function getRev()
-    {
-        preg_match('/<a(.+)>(.+)<\/a>/', $this->data['rev'], $match);
-        return str_replace('(changelog)', '', $match[2]);
     }
 
 }

@@ -1,13 +1,23 @@
-#horde_nb {position: absolute; top: 138px; left: 30px; width: 60px; text-align: right; font-size: 14px}
-#ally_nb {position: absolute; top: 138px; left: 130px; width: 40px; text-align: left; font-size: 14px}
-#status {position: absolute; top: 69px; left: 120px; width: 56px; text-align: left; font-size: 12px}
-#uptime {position: absolute; top: 91px; left: 120px; width: 85px; text-align: left; font-size: 12px}
+body {padding: 0; margin: 0; background: black}
+#nb_box{position: absolute; top: 7.9em; width: 210px; text-align: center; font-weight: bold;}
+#horde_nb, #ally_nb{font-size: 1.1em}
+#status {position: absolute; top: 3.3em; left: 50px;  text-align: left;}
+#uptime {position: absolute; top: 4.7em; left: 50px;  text-align: left;}
+#rev {position: absolute; top: 6.2em; left: 47px; width: 110px; text-align: center}
 
 .status_online {color: green}
 .status_offline {color: red}
 
-@font-face { font-family: Warcraft; src: url('fonts/warcraft.ttf'); }
-.storm {font-family: Warcraft; font-size: 1.1em; color: white; font-weight: bold}
+@font-face {
+    font-family: 'Warcraft';
+    src: url('fonts/warcraft.eot');
+    src: url('warcraft.eot?#iefix') format('embedded-opentype'),
+         url('fonts/warcraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.storm{font-family: Warcraft; font-size: 1em; color: white; position: relative; display: block; line-height: 1em}
 
 #indicator {position: absolute; left: 21px; top: 14px}
 

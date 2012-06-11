@@ -16,7 +16,8 @@ class WidgetController
         $ally_nb = $this->model->getAlliancePlayersNb();
         $is_online = $this->model->isServerOnline();
         $uptime = $this->model->getServerUptime();
-   
+        $rev = $this->model->getRev();
+
         $layout = isset($_GET['layout'])?$_GET['layout']:null;
         switch($layout)
         {

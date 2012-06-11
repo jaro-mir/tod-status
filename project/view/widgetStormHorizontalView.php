@@ -8,24 +8,29 @@
     <div class="storm" onclick="refreshStatus('widget.php?layout=storm_h')">
         <div id="indicator" style="display: none"><img src="images/indicator.gif" /></div>
         <img src="images/storm_h.png" />
-        <div id="horde_nb"><?php echo $horde_nb ?></div>
-        <div id="ally_nb"><?php echo $ally_nb ?></div>
         <div id="status">
-        <?php if($is_online === true): ?>
-        <span class="status_online">
-            online
-        </span>
-        <?php elseif($is_online === false): ?>
-        <span class="status_offline">
-            offline
-        </span>
-        <?php else: ?>
-        <span class="status_error">
-            błąd
-        </span>
-        <?php endif ?>
+            status: 
+            <?php if($is_online === true): ?>
+            <span class="status_online">
+                online
+            </span>
+            <?php elseif($is_online === false): ?>
+            <span class="status_offline">
+                offline
+            </span>
+            <?php else: ?>
+            <span class="status_error">
+                błąd
+            </span>
+            <?php endif ?>
         </div>
-        <div id="uptime"><?php echo $uptime ?></div>
+        <div id="uptime">uptime: <?php echo $uptime ?></div>
+        <div id="nb_box">
+            <span id="horde_nb"><?php echo $horde_nb ?></span>
+            vs
+            <span id="ally_nb"><?php echo $ally_nb ?></span>
+        </div>
+        <div id="rev">revision: <?php echo $rev ?></div>
     </div>
 </body>
 </html>

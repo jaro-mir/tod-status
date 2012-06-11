@@ -26,6 +26,7 @@
         <?php endif ?>
         </div>
         <div id="uptime"><?php echo $uptime ?></div>
+        <div id="rev"><?php echo $rev ?></div>
     </div>
 </body>
 </html>
