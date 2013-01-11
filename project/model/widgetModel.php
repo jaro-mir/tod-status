@@ -18,7 +18,13 @@ class WidgetModel
     {
         if(!$this->page_content)
         {
-            $this->page_content = str_replace("\n", '', file_get_contents('http://wotlk.theatreofdreams.pl'));
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, 'http://wotlk.theatreofdreams.pl');
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+            $data = curl_exec($ch);
+            
+            $this->page_content = str_replace("\n", '', $data);   
+            curl_close($ch);
         }
 
         return $this->page_content;
@@ -132,7 +138,8 @@ class WidgetModel
     public function getRev()
     {
         preg_match('/<a(.+)>(.+)<\/a>/', $this->data['rev'], $match);
-        return str_replace('(changelog)', '', $match[2]);
+        $rev = isset($match[2])?str_replace('(changelog)', '', $match[2]):'??';
+        return $rev;
     }
 
 }
